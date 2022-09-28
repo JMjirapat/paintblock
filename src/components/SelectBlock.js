@@ -8,8 +8,10 @@ function SelectBlock({ color }) {
 			className="block-select"
 			style={{
 				background: color,
-				borderWidth: selColor === color ? "4px" : "2px",
-				borderColor: selColor === color ? "#bebebe" : "#000000",
+				border:
+					selColor === color
+						? "4px solid #bebebe"
+						: "2px solid #000000",
 			}}
 			onClick={() => setSelColor(color)}
 		></div>
